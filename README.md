@@ -11,7 +11,7 @@ Ocupadas hasta el momento:
 ### :large_blue_circle: MAIN.
 Contiene la recopilación de todos los proyectos terminados hasta el momento.
 
-### :orange_circle: WEB-NAME (y "clear")
+### :orange_circle: WEB-NAME
 Por cada proyecto, habrá una rama con su nombre (ej. Google). Transcurrirá todo su desarrollo allí hasta terminarse y ser enviado a la rama main.
 * Para no pisar nombres, archivos raíz como "index.html" sufrirán cambios. Ej. "indexGoogle.html".
 
