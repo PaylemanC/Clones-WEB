@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 26px; 
+}
+
+header nav {
+    display: flex; 
+    /* Mover el contenido al margen derecho*/
+    justify-content: flex-end;
+}
+
+.lista-navegador-derecho {
+    width: 250px;
+    /*Height toma de forma automática la altura del header (60px).*/ 
+    height: auto;
+    display: flex; 
+    list-style: none; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px;
+    margin-right: 16px;
+    margin-left: 15px;
+}
+
+/*Dos referencias en una: la clase de la lista, y el ancla de link (a)*/
+.lista-navegador-derecho a {
+    /*Margen para que los enlaces no estén pegados*/
+    margin-right: 11px;
+    color: #666666; 
+}
+
+a {
+    /*Quita los links subrayados*/
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Nótese una nomenclatura más larga. Es para que sea más específica, pero es opcional; recuerda siempre poner los puntos . a las clases si vas a usarla*/
+nav .lista-navegador-derecho .menu-icon {
+    background-image: url("https://static.thenounproject.com/png/756729-200.png");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: contain; /*Contain para que se asemeje al tamaño del contenedor*/
+    width: 40px;
+    height: 40px; 
+    opacity: 60%;
+    margin-right: 19px; 
+}
+
+.acceder {
+    background-color: #1a73e8;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 95px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+main {
+    text-align: center; 
+}
+
+
+.main-logo {
+    width: 530px; 
+    /*Utilizar "auto" es para ocupar también los espacios que por defecto quedan en los márgenes. Sirve para REALMENTE centrar elementos*/
+    margin: 0 auto;
+}
+
+.main-logo img {
+    width: 275px
+}
+
+
+.main-input {
+    width: 530px;
+    margin: 0 auto; 
+    margin-bottom: 26px; 
+}
+
+.input-container {
+    width: 580px; 
+    border-radius: 100px; 
+    border: 1px solid #dfe1e5;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/*Aquí el último input hace referencia EXCLUSIVAMENTE A LA ETIQUETA <input>*/
+main .main-input input {
+    width: 450px; 
+    height: 40px; 
+    /*En las siguientes dos sentencias quito el borde negro y azul (al dar click) que tiene por defecto*/
+    border: none; 
+    outline: none; 
+}
+
+    /*Pseudoelemento de CSS.
+    Se añaden a los selectores, pero no describen un estado especial - Permiten añadir estilos a una parte concreta del documento.*/
+main .main-input .input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447; /*Sombreado al momento de poner el cursor en el input*/
+    border-color: #00000000;
+
+}
+    /*La pseudo-clase :hover coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).*/
+
+
+.icono-busqueda {
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain; 
+    width: 15px; 
+    height: 15px; 
+    opacity: 35%;
+    margin: 12px;
+}
+
+
+/*Exactamente igual al .icono-busqueda (exceptuando las medidas), con la diferencia de que sí queremos que haga algo cuando se le pase el cursor por encima*/
+.microfono {
+    background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain; 
+    width: 25px; 
+    height: 25px; 
+    cursor: pointer; 
+    margin-right: 20px;
+}
+
+
+.main-buttons {
+    width: 530px; 
+    margin: 0 auto; 
+}
+
+.main-buttons div {
+    /*Para colocar los botones en forma horizontal*/
+    display: inline-block; 
+}
+
+
+/*CSS específico de los botones*/
+.main-buttons button {
+    height: 36px; 
+    background: #f8f9fa; 
+    border: none; 
+    font-size: 14px; 
+    color: #434649;
+    border-radius: 5px;
+    /*Margen de arriba y abajo 0px, margen de derecha e izquierda 15px*/
+    padding: 0 15px; 
+    /*Separación de los botones*/
+    margin-right: 15px; 
+}
+
+main .main-buttons button:hover {
+    border: 1px solid #5f6368; 
+    color: #222; 
+    background: #f8f8f8; 
+}
+
+
+footer {
+    width: 100%;
+    height: 50px; 
+    /*Asegurar que el footer quede abajo siempre, position y bottom:*/
+    position: absolute; 
+    bottom: 0; 
+    /* Defino el tipo de display: grid */
+    display: grid; 
+    /*Inserto dos columnas*/
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 14px; 
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    opacity: 70%;
+}
+
+footer ul {
+    margin: 10px; 
+    list-style: none; 
+    display: flex; 
+    padding-left: 0;
+}
+
+.footer-izquierdo {
+    /*Alineación a la izquierda*/
+    justify-self: left;
+}
+
+.footer-derecho {
+    /*Alineación a la derecha*/
+    justify-self: right;
+}
+
+footer ul li a {
+    margin: 10px; 
+    color: #5f6268;
+}
