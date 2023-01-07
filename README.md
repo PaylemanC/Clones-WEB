@@ -1,4 +1,4 @@
-# Replicas-WEB 
+# Clones-WEB 
 Repositorio a modo de prácticas para replicar una interfaz de usuario llevándola a código. :computer::art:
 
 ## Tecnologías :hammer_and_wrench:
