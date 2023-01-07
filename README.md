@@ -3,9 +3,9 @@ Repositorio a modo de prácticas para replicar una interfaz de usuario llevándo
 
 ## Tecnologías :hammer_and_wrench:
 Ocupadas hasta el momento: 
-* HTML.
-* CSS. 
-* JAVASCRIPT.
+* **HTML**.
+* **CSS**. 
+* **JAVASCRIPT**.
 
 ## Visualización de Ramas :woman_technologist:
 ### :large_blue_circle: MAIN.
