@@ -66,27 +66,34 @@ nav .lista-navegador-derecho .menu-icon {
     box-shadow: 0 1px 6px 0 #20212447;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 main {
     text-align: center; 
 }
 
 .main-logo {
-    width: 530px; 
+    width: auto; 
     margin: 0 auto;
+    margin-bottom: 1.5rem;
 }
 
-.main-logo img {
-    width: 275px
-}
-
-
-.main-input {
-    width: 530px;
+.main__input {
     margin: 0 auto; 
+    width: 530px;
     margin-bottom: 26px; 
 }
 
-.input-container {
+.main__input-container {
     width: 580px; 
     border-radius: 100px; 
     border: 1px solid #dfe1e5;
@@ -96,7 +103,7 @@ main {
 }
 
 /*Aquí el último input hace referencia EXCLUSIVAMENTE A LA ETIQUETA <input>*/
-main .main-input input {
+main .main__input input {
     width: 450px; 
     height: 40px; 
     /*En las siguientes dos sentencias quito el borde negro y azul (al dar click) que tiene por defecto*/
@@ -104,7 +111,7 @@ main .main-input input {
     outline: none; 
 }
 
-main .main-input .input-container:hover {
+main .main__input .main__input-container:hover {
     box-shadow: 0 1px 6px 0 #20212447; 
     border-color: #00000000;
 }
@@ -121,7 +128,7 @@ main .main-input .input-container:hover {
 }
 
 
-.microfono {
+.icono-microfono {
     background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
     background-repeat: no-repeat;
     background-position: center; 
@@ -159,6 +166,13 @@ main .main-buttons button:hover {
     color: #222; 
     background: #f8f8f8; 
 }
+
+
+
+
+
+
+
 
 
 footer {
