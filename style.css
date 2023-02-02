@@ -52,7 +52,7 @@ nav .lista-navegador-derecho .menu-icon {
     cursor: pointer;
 }
 
-.acceder {
+.btn-acceder {
     background-color: #1a73e8;
     border-radius: 4px;
     border: none;
@@ -61,7 +61,7 @@ nav .lista-navegador-derecho .menu-icon {
     font-size: 15px;
     cursor: pointer;
 }
-.acceder:hover {
+.btn-acceder:hover {
     background-color: #1b66c9;
     box-shadow: 0 1px 6px 0 #20212447;
 }
@@ -89,12 +89,12 @@ main {
 
 .main__input {
     margin: 0 auto; 
-    width: 530px;
+    width: 530px; /*-----*/
     margin-bottom: 26px; 
 }
 
 .main__input-container {
-    width: 580px; 
+    width: 580px; /*-----*/
     border-radius: 100px; 
     border: 1px solid #dfe1e5;
     display: flex; 
@@ -102,11 +102,9 @@ main {
     align-items: center; 
 }
 
-/*Aquí el último input hace referencia EXCLUSIVAMENTE A LA ETIQUETA <input>*/
 main .main__input input {
-    width: 450px; 
-    height: 40px; 
-    /*En las siguientes dos sentencias quito el borde negro y azul (al dar click) que tiene por defecto*/
+    width: 450px; /*-----*/
+    height: 40px; /*-----*/
     border: none; 
     outline: none; 
 }
@@ -127,7 +125,6 @@ main .main__input .main__input-container:hover {
     margin: 12px;
 }
 
-
 .icono-microfono {
     background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
     background-repeat: no-repeat;
@@ -146,7 +143,6 @@ main .main__input .main__input-container:hover {
 }
 
 .main-buttons div {
-    /*Para colocar los botones en forma horizontal*/
     display: inline-block; 
 }
 
@@ -162,11 +158,15 @@ main .main__input .main__input-container:hover {
 }
 
 main .main-buttons button:hover {
-    border: 1px solid #5f6368; 
+    border: 1px solid rgb(0 0 0 / 15%);; 
     color: #222; 
-    background: #f8f8f8; 
+    background: #f8f9fa; 
 }
 
+.main-buttons button:focus {
+    border: 1px solid #4285f4;
+    outline: none;
+}
 
 
 
@@ -177,8 +177,7 @@ main .main-buttons button:hover {
 
 footer {
     width: 100%;
-    height: 50px; 
-    /*Asegurar que el footer quede abajo siempre, position y bottom:*/
+    height: 7vh; 
     position: absolute; 
     bottom: 0; 
     display: grid; 
@@ -187,14 +186,12 @@ footer {
     font-size: 14px; 
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
-    opacity: 70%;
 }
 
 footer ul {
-    margin: 10px; 
     list-style: none; 
     display: flex; 
-    padding-left: 0;
+    padding: 0 1rem;
 }
 
 .footer-izquierdo {
@@ -206,6 +203,9 @@ footer ul {
 }
 
 footer ul li a {
-    margin: 10px; 
-    color: #5f6268;
+    margin: 1rem; 
+    color: #70757a;
+}
+footer a:hover {
+    text-decoration: underline;
 }
